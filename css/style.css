@@ -3038,7 +3038,7 @@ select:focus {
 }
 .single-brand-item a {
     display: block;
-    background: #ffffff;
+    background: #ffffff00;
     text-align: center;
     transition: all 700ms ease 200ms;
 }
@@ -3047,12 +3047,13 @@ select:focus {
     box-shadow: 0px 5px 10px 2px #ebebeb;    
 }
 .single-brand-item a img{
+    filter: brightness(100%); 
     width: auto;
     transition: all 900ms ease 200ms;
     transform: perspective(1200px) rotateY(0deg) translateZ(0px);
 }
 .single-brand-item:hover a img{
-    filter: brightness(0%); 
+    filter: brightness(80%); 
     transform: perspective(1200px) rotateY(360deg) translateZ(0px);
 }
 .single-brand-item .overlay-content {
@@ -3129,7 +3130,7 @@ select:focus {
     margin-left: 10px;
 }
 .brand-items-carousel.owl-carousel .owl-nav [class*="owl-"]:hover{
-    border-color: var(--brand-color);
+    /* border-color: var(--brand-color); */
 }
 
 
@@ -3631,6 +3632,7 @@ select:focus {
 .top-style2-right .topbar-social-links li a i{
     color: #d6d6d6;
     font-size: 20px;
+    padding: 2px;
     transition: all 500ms ease;
 }
 .top-style2-right .topbar-social-links li a:hover i{
@@ -5473,6 +5475,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     position: relative;
     display: inline-block;
     float: left;
+    padding-left: 14px;
     line-height: 30px;
 }
 .single-footer-widget .our-info-box .follow-us-social-links ul li{
@@ -5488,6 +5491,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     right: 0;
     width: 1px;
     height: 11px;
+    display: none;
     background: #404146;
     content: "";
     transform: rotate(15deg);
