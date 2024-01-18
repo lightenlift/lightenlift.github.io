@@ -3,7 +3,6 @@
 
 
 <!-- 404-page 06:47:00 GMT -->
-
 <head>
     <meta charset="UTF-8">
     <title>Lighten Lift - 404</title>
@@ -38,7 +37,7 @@
         <div id="header-placeholder"></div>
 
         <!--Start breadcrumb area-->
-        <section class="breadcrumb-area style2" style="background-image: url(images/resources/error-page-bg.jpg);">
+        <section class="breadcrumb-area style2" style="background-image: url(images/resources/breadcrumb-bg-2.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -49,7 +48,7 @@
                             </div>
                             <div class="breadcrumb-menu float-left">
                                 <ul class="clearfix">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index-2.html">Home</a></li>
                                     <li class="active">Error Page</li>
                                 </ul>
                             </div>
@@ -70,7 +69,7 @@
                             <div class="title">404</div>
                             <p>We’re unable to find a page you are looking for, Try later or click the button.</p>
                             <div class="button">
-                                <a class="btn-one" href="index.html">Back to Home</a>
+                                <a class="btn-one" href="index-2.html">Back to Home</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +79,7 @@
         <!--End Error Page  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms" Area-->
 
         <div id="footer-placeholder"></div>
-
+        
 
     </div>
 
@@ -93,7 +92,7 @@
             .then(html => {
                 document.getElementById('header-placeholder').innerHTML = html;
             });
-        fetch('./footer.html')
+            fetch('./footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer-placeholder').innerHTML = html;
@@ -145,5 +144,4 @@
 
 
 <!-- 404-page 06:47:00 GMT -->
-
 </html>
