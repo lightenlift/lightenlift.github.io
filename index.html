@@ -101,6 +101,15 @@
 
 <body>
   <div class="boxed_wrapper">
+
+    <!-- <div class="mainloader">
+        <div class="door-left"></div>
+        <div class="door-right"></div>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+    </div> -->
+    
     <div class="preloader"></div>
 
     <div id="header-placeholder"></div>
@@ -1822,7 +1831,7 @@
             <ul class="brand-items-carousel owl-carousel owl-theme">
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <a href="https://www.montanarigiulio.in/">
+                <a href="https://www.montanarigiulio.in/" target="_blank">
                   <img src="images/brand/montinari.png" alt="Montinari Motor" /></a>
                 <div class="overlay-content">
                   <p>Montinari</p>
@@ -1831,7 +1840,7 @@
               <!--End Single Brand Item-->
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <a href="https://www.sharpengineers.com/"><img src="images/brand/sharp.png" alt="Sharp Motor" /></a>
+                <a href="https://www.sharpengineers.com/" target="_blank"><img src="images/brand/sharp.png" alt="Sharp Motor" /></a>
                 <div class="overlay-content">
                   <p>Sharp</p>
                 </div>
@@ -1839,7 +1848,7 @@
               <!--End Single Brand Item-->
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                <a href="https://www.aaronindustries.net/"><img src="images/brand/aaron.png"
+                <a href="https://www.aaronindustries.net/" target="_blank"><img src="images/brand/aaron.png"
                     alt="Aaron Industries Ltd" /></a>
                 <div class="overlay-content">
                   <p>Aaron</p>
@@ -1848,7 +1857,7 @@
               <!--End Single Brand Item-->
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                <a href="https://www.shivshaktielevatorcomponents.com/"><img src="images/brand/shivshakti.png"
+                <a href="https://www.shivshaktielevatorcomponents.com/" target="_blank"><img src="images/brand/shivshakti.png"
                     alt="Shiv Shakti" /></a>
                 <div class="overlay-content">
                   <p>Shiv Shakti</p>
@@ -1857,7 +1866,7 @@
               <!--End Single Brand Item-->
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-                <a href="https://www.jsw.in/"><img src="images/brand/jsw.png" alt="JSW" /></a>
+                <a href="https://www.jsw.in/" target="_blank"><img src="images/brand/jsw.png" alt="JSW" /></a>
                 <div class="overlay-content">
                   <p>JSW</p>
                 </div>
@@ -1865,7 +1874,7 @@
               <!--End Single Brand Item-->
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-                <a href="https://www.jindalstainless.com/"><img src="images/brand/jsl.png" alt="Jindal Stainless" /></a>
+                <a href="https://www.jindalstainless.com/" target="_blank"><img src="images/brand/jsl.png" alt="Jindal Stainless" /></a>
                 <div class="overlay-content">
                   <p>Jindal Stainless</p>
                 </div>
@@ -1874,7 +1883,7 @@
 
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-                <a href="https://www.adcocontrols.com/"><img src="images/brand/adco.png" alt="ADCO Controls" /></a>
+                <a href="https://www.adcocontrols.com/" target="_blank"><img src="images/brand/adco.png" alt="ADCO Controls" /></a>
                 <div class="overlay-content">
                   <p>ADCO Controls</p>
                 </div>
@@ -1883,7 +1892,7 @@
 
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-                <a href="https://www.arkel.co.in/"><img src="images/brand/arkel.png" alt="Arkel" /></a>
+                <a href="https://www.arkel.co.in/" target="_blank"><img src="images/brand/arkel.png" alt="Arkel" /></a>
                 <div class="overlay-content">
                   <p>Arkel</p>
                 </div>
@@ -1892,7 +1901,7 @@
 
               <!--Start Single Brand Item-->
               <li class="single-brand-item wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-                <a href="https://ushamartin.com/"><img src="images/brand/usha.png" alt="Usha Martin" /></a>
+                <a href="https://ushamartin.com/" target="_blank"><img src="images/brand/usha.png" alt="Usha Martin" /></a>
                 <div class="overlay-content">
                   <p>Usha Martin</p>
                 </div>
@@ -2048,6 +2057,20 @@
   </div>
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+            // Simulate preloader animation
+            const preloader = document.querySelector('.mainloader');
+            const logo = document.querySelector('.logo');
+            setTimeout(function () {
+                preloader.classList.add('active');
+                setTimeout(function () {
+                    logo.style.transition = 'opacity 0.4s ease-in-out';
+                    logo.style.opacity = '0';
+                }, 0);
+            }, 2000);
+            // Adjust the time as needed
+        });
+
     // Load header using JavaScript
     fetch('./header.html')
       .then(response => response.text())
