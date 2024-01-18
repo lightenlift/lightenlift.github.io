@@ -24,7 +24,7 @@
       <p><span class="icon-music"></span>We have Answers</p>
       <ul>
         <li> <a href="tel:+918944044150">+91 89-4404-4150</a></li>
-        <li><a href="mailto:support@lightenlift.com">support@lightenlift.com</a></li>
+        <li><a id="emailLink">support@lightenlift.com</a></li>
         <li>Mon - Sat: 9am to 6pm</li>
       </ul>
     </div>
@@ -138,5 +138,10 @@
   </div>
 </header>
 <!--End Main Header-->
+
+<script>
+  var encodedEmail = "mailto:" + "support" + "@" + "lightenlif.com";
+    document.getElementById("emailLink").setAttribute("href", encodedEmail);
+</script>
   </body>
 </html>
