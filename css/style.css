@@ -6917,7 +6917,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
 .breadcrumb-area .inner-content {
     position: relative;
     display: block;
-    padding: 360px 0 0;
+    padding: 60px 0 0;
 }
 .breadcrumb-area .title {
     position: relative;
@@ -13061,3 +13061,151 @@ li .single-footer-contact-info .text p span{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the preloader container */
+.mainloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Change background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Styles for the left door */
+  .door-left,
+  .door-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #333; /* Change door color as needed */
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Initial positioning for the doors */
+  .door-left {
+    left: 0;
+    transform-origin: right;
+    transform: translateX(0);
+  }
+  
+  .door-right {
+    right: 0;
+    transform-origin: left;
+    transform: translateX(0);
+  }
+  
+  /* Animation: opening doors */
+  .mainloader.active .door-left {
+    transform: translateX(-100%);
+  }
+  
+  .mainloader.active .door-right {
+    transform: translateX(100%);
+  }
+  
+  .logo {
+    z-index: 99;
+    position: relative;
+    color: #cccccc; /* Change this to your preferred text color */
+    font-size: 2em; /* Change this to your preferred font size */
+  }
+  
+  .logo img {
+    width: 10rem;
+  }
+  
+  .door-left,
+  .door-right{
+      background-image: url('../images/favicon/apple-touch-icon.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+  }
+
+  .contact-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-all{
+    position: absolute;
+  }
+
+  .header-all h1{
+    color: #FFF;
+  }
+
+  .contact-container-source{
+    display: flex;
+  }
+
+  .contact-map{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-number{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-number ul li{
+    font-size: larger;
+    padding: 8px 0px;
+  }
+
+  .contact-number ul li a{
+    padding-left: 10px;
+  }
+
+  .contact-number ul li i{
+    color: #007ab9;
+  }
+
+  .contact-address{
+    width: 100%;
+    background-color: #d3d9e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  .single-line i{
+    color: #007ab9;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .single-line p{
+    font-size: 16px;
+  }
+
+
+  .single-line{
+    display: flex;
+  }
