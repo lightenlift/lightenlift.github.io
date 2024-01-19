@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lighten Lift - Contact</title>
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+        integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+
+    <!-- <div class="preloader"></div> -->
+    <div id="header-placeholder"></div>
+
+    <section>
+        <div class="contact-container">
+            <div class="contact-header">
+                <div class="header-all">
+                    <h1>Contact Us</h1>
+                </div>
+                <img src="/images/resources/error-page-bg.jpg" alt="">
+            </div>
+            <div class="contact-container-source">
+                <div class="contact-map">
+                    <img src="./images/resources/about-image.jpg" alt="">
+                </div>
+                <div class="contact-number">
+                    <h2>Contact Number</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+918944044150">+91 89-4404-4150</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:support@lightenlift.com">support@lightenlift.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:chinmoy@lightenlift.com">chinmoy@lightenlift.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-address">
+                    <div>
+                        <h2>Office Address</h2>
+                        <div class="single-line">
+                            <i class="fa-solid fa-location-dot fa-3xl"></i>
+                            <p>
+                                Maheshmati, English Bazar <br>
+                                Malda, West Bengal 732101
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     // Simulate preloader animation
+        //     const preloader = document.querySelector('.mainloader');
+        //     const logo = document.querySelector('.logo');
+        //     setTimeout(function () {
+        //         preloader.classList.add('active');
+        //         setTimeout(function () {
+        //             logo.style.transition = 'opacity 0.4s ease-in-out';
+        //             logo.style.opacity = '0';
+        //         }, 0);
+        //     }, 2000);
+        //     // Adjust the time as needed
+        // });
+
+        // Load header using JavaScript
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            });
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            });
+    </script>
+</body>
+
+</html>
