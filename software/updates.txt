@@ -1,0 +1,12 @@
+;aiu;
+
+[Update]
+Name = Lighten Lift
+ProductVersion = 1.0.0.0
+URL = https://drive.google.com/file/d/1PdLaX9ewBfSYocunSDTwAlyL9FC4uIFe/view?usp=drive_link
+Size = 94859920
+SHA256 = A602FBB1F32366052A44A7F704516E3C26334C104FB32CD10205BBDACE60C5A5
+MD5 = 9768c9fe52ac99169225301eda2bdb3f
+ServerFileName = Lighten_Lift.exe
+RegistryKey = HKUD\Software\Beta Debug\Lighten Lift\Version
+Version = 1.0.0.0
