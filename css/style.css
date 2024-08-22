@@ -13159,6 +13159,43 @@ li .single-footer-contact-info .text p span{
   .contact-container-source{
     display: flex;
   }
+   @media screen and (max-width: 600px) {
+
+    .contact-container-source{
+      flex-direction: column;
+    }
+
+    .contact-number{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .contact-number ul li{
+        font-size: larger;
+        padding: 8px 0px;
+      }
+    
+      .contact-number ul li a{
+        padding-left: 10px;
+      }
+    
+      .contact-number ul li i{
+        color: #007ab9;
+      }
+    
+      .contact-address{
+        width: 100%;
+        background-color: #d3d9e0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      } 
+    
+   }
 
   .contact-map{
     width: 100%;
